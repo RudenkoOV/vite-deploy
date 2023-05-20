@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import logo from '../../images/Logo.png';
 import topCard from '../../images/top_card.png';
 
 import {
   AvatarBox,
-  ButtonBack,
   ButtonContainer,
   ButtonFollow,
   ButtonLoadMore,
@@ -23,8 +22,8 @@ import {
   UserBox,
   UserCardContainer,
 } from './UserCard.styled';
-import { fetchgetUsers } from 'components/Redux/option';
-import { updateUsers } from 'components/Fetch/updateUsers';
+import { fetchgetUsers } from '../Redux/option';
+import { updateUsers } from '../Fetch/updateUsers';
 
 const UserCard = () => {
   const dispatch = useDispatch();
@@ -39,10 +38,6 @@ const UserCard = () => {
     window.setTimeout(() => { window.scrollIntoView(); }, 4450);
     setCurrentIndex(prevIndex => prevIndex + 3);
     
-  };
-
-  const goBack = () => {
-    setCurrentIndex(prevIndex => prevIndex - 3);
   };
 
   useEffect(() => {
@@ -79,7 +74,7 @@ const UserCard = () => {
               ? user.followers - 1
               : user.followers + 1;
             updateUsers(user.id, updatedFollowers)
-              .then(response => {
+              .then(() => {
                 setUsers(prevUsers => {
                   return prevUsers.map(prevUser => {
                     if (prevUser.id === userId) {

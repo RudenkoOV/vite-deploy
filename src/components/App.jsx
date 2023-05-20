@@ -3,7 +3,7 @@ import UserCard from './Usercard/UserCard';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import Home from './Pages/Home';
-import { NotFoundPage } from 'components/Pages/NotFoundPage';
+import { NotFoundPage } from './Pages/NotFoundPage';
 
 function App() {
   return (

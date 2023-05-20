@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { updateUsers } from 'components/Fetch/updateUsers';
-import { getUsers } from 'components/Fetch/getUsers';
+import { updateUsers } from '../Fetch/updateUsers';
+import { getUsers } from '../Fetch/getUsers';
 
 export const fetchgetUsers = createAsyncThunk(
   'users/fetchgetUsers',
