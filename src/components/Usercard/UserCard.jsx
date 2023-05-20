@@ -35,9 +35,7 @@ const UserCard = () => {
   
   
   const loadMoreCards = () => {
-    window.setTimeout(() => { window.scrollIntoView(); }, 4450);
     setCurrentIndex(prevIndex => prevIndex + 3);
-    
   };
 
   useEffect(() => {
