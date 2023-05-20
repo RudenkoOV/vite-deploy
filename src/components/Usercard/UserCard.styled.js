@@ -62,6 +62,8 @@ left: 36px;
 `
 export const Img = styled.img`
 /* position: absolute; */
+width: 308px;
+height: 168px;
 `
 
 export const Line = styled.div`

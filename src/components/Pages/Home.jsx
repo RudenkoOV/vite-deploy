@@ -6,9 +6,8 @@ export default function Home() {
     <WrapperHomePage>
       
       <HomeTitle style={{ color: 'black' }}>
-        To display tweets, select an option from the dropdown menu on the 
+        Hello, to watch tweets, please click here 
         <Link to="/tweets" > Tweets </Link>
-         page.
       </HomeTitle>
     </WrapperHomePage>
   );

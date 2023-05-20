@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const WrapperHomePage = styled.div`
+min-height: 100vh;
 display: flex;
 width: 35vw; 
 align-items: center;
